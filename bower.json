@@ -1,0 +1,27 @@
+{
+  "name": "sui",
+  "description": "Small, lightweight front-end UI framework",
+  "version": "1.0.0",
+  "keywords": [
+    "css",
+    "scss",
+    "js",
+    "responsive",
+    "mobile-first",
+    "front-end",
+    "framework",
+    "web",
+    "development"
+  ],
+  "ignore": [
+    "*.json"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "authors": [
+    "ghfhaifeng <ghfhaifeng@163.com>"
+  ],
+  "license": "MIT",
+  "private": true
+}
