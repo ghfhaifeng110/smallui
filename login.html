@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="description" content="SUI,致力于前端开发推广">
+    <meta name="keywords" content="前端,前端开发,前端框架,css,html,js,jquery,ui,设计,SUI">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>简洁、轻量的前端UI框架－SUI</title>
+    <link rel="Shortcut Icon" href="dist/images/sui.ico">
+    <link rel="stylesheet" href="dist/font/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/sui.css">
+    <link rel="stylesheet" href="dist/css/sui-main.css">
+    <link rel="stylesheet" href="dist/css/login.css">
+</head>
+<body>
+
+<div class="main clearfix" >
+    <div class=" content" id="content">
+        <section class="section" id="h-input">
+            <div class="page-header">
+                <h1>表单</h1>
+            </div>
+            <h3>登录样例</h3>
+            <div class="docs-example docs-example-mt">
+                <form class="form-horizontal" id="login-form">
+                    <div class="form-group form-line-input">
+                        <input id="user" class="form-control" name="user" type="text">
+                        <label for="user">账号</label>
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group form-line-input">
+                        <input id="pass" class="form-control" name="password" type="text">
+                        <label for="pass">密码</label>
+                        <span class="help-block"></span>
+                    </div>
+                    <a href="javascript:;" class="btn btn-primary" id="login-btn">登录</a>
+                </form>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+<script src="dist/js/lib/jquery/dist/jquery.min.js"></script>
+<script src="dist/js/lib/jquery.validate.min.js"></script>
+<script src="dist/js/sui.js"></script>
+<script src="dist/js/main.js"></script>
+
+<script>
+    sui();
+</script>
+</body>
+</html>
