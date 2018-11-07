@@ -1,0 +1,12 @@
+
+.form-banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	text-align: center;
+	background-image: -webkit-linear-gradient(#4562E9 0,#56B5FE 100%),-webkit-radial-gradient(18% 84%,#5888F5 2%,#586EF5 60%,#7558F4 100%);
+	background-image: -o-linear-gradient(#4562E9 0,#56B5FE 100%),-o-radial-gradient(18% 84%,#5888F5 2%,#586EF5 60%,#7558F4 100%);
+	background-image: linear-gradient(#4562E9 0,#56B5FE 100%),radial-gradient(18% 84%,#5888F5 2%,#586EF5 60%,#7558F4 100%)
+}

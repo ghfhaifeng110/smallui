@@ -560,7 +560,7 @@ ol.linenums li {
     border: 1px solid #ddd; }
 
 .docs-example-mt {
-    padding-top: 30px; }
+    padding-top: 30px; top:50%;margin-top:200px;}
 
 .docs-example-scrollbar .progress {
     margin-bottom: 10px; }
