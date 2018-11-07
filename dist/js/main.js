@@ -1,96 +1,161 @@
-!function(n) {
-    "use strict";
-    var o = $("#header"),
-    i = $("#check-box"),
-    t = $("#login-btn"),
-    a = $("#backToTop"),
-    e = {
-        init: function() {
-            e.bindEvent(), e.valid(), $('[data-toggle="tip"]').tip(), $('[data-toggle="alert"]').alert(), e.page("#page"), prettyPrint()
-        },
-        bindEvent: function() {
-            o.find(".nav a").click(function() {
-                var n = $(this).attr("data-id"),
-                    o = $("#" + n).offset().top;
-                $("body,html").stop().animate({
-                    scrollTop: o - 15
-                }, 500, "linear", function() {})
-            }), t.click(function(n) {
-                $("#login-form").valid() && console.log($("#login-form").serialize())
-            }), i.on("click", "a", function(n) {
-                var o = $(this),
-                    t = o.data("color");
-                i.find("label").each(function(n, o) {
-                    $(o).removeClass("box-primary box-success box-warning box-danger  box-violet box-black box-grey").addClass(t)
-                })
-            });
-            var e = null;
-            $("#dialog-btn").click(function(n) {
-                var o = "<div >您觉的SUI好用吗？</div>";
-                e = new Modal({
-                    id: "modal1",
-                    type: 0,
-                    title: "提示",
-                    content: o,
-                    complete: function() {},
-                    confirm: function() {
-                        new Modal({
-                            id: "modal2",
-                            title: "提示",
-                            content: "感谢您的支持！",
-                            confirm: function() {
-                                this.hide()
-                            }
-                        })
-                    },
-                    cancel: function() {
-                        new Modal({
-                            id: "modal3",
-                            type: "1",
-                            content: "取消成功",
-                            cancelButton: !1,
-                            confirm: function() {
-                                this.hide()
-                            }
-                        })
-                    }
-                })
-            }), $(n).on("scroll", function(o) {
-                var i = $(n).scrollTop();
-                i > 200 ? a.addClass("in") : a.removeClass("in")
-            }), a.click(function(n) {
-                $("body,html").stop().animate({
-                    scrollTop: 0
-                }, 500, "linear", function() {})
-            }), $("body").click(function(n) {
-                $("#tip1").tip("hide")
-            })
-        },
-        valid: function() {
-            $("#login-form").validate({
-                rules: {
-                    user: "required",
-                    password: {
-                        required: !0,
-                        minlength: 6
-                    }
-                },
-                messages: {
-                    user: "不能为空",
-                    password: "密码至少6位数以上"
-                }
-            })
-        },
-        page: function(n) {
-            $(n).page({
-                pageCount: 26,
-                current: 1,
-                showNum: 10,
-                callback: function(n) {
-                    console.log(n)
-                }
-            })
-        }
-    };
-    n.sui = e.init
-}(this);
+/**
+ *
+ * @authors H君
+ * @date    2017-02-09 14:26:44
+ * @version 0.0.9
+ */
+!(function(window) {
+	'use strict';
+
+	var $header = $('#header'),
+		$checkBox = $('#check-box'),
+		$loginBtn = $('#login-btn');
+
+	var $backToTop = $('#backToTop');
+
+	var sui = {
+		// 初始化
+		init: function() {
+			sui.bindEvent();
+			sui.valid();
+			$('[data-toggle="tip"]').tip();
+			$('[data-toggle="alert"]').alert();
+			sui.page('#page');
+			prettyPrint();
+		},
+
+		//事件绑定
+		bindEvent: function() {
+			$header.find('.nav a').click(function() {
+				var _id = $(this).attr('data-id'),
+					T = $('#' + _id).offset().top;
+
+				$('body,html')
+					.stop()
+					.animate(
+						{
+							scrollTop: T - 15
+						},
+						500,
+						'linear',
+						function() {
+							// $('#navbar').removeClass('in');
+						}
+					);
+			});
+
+			$loginBtn.click(function(event) {
+				if ($('#login-form').valid()) {
+					console.log($('#login-form').serialize());
+				}
+			});
+
+			$checkBox.on('click', 'a', function(event) {
+				var $this = $(this),
+					color = $this.data('color');
+
+				$checkBox.find('label').each(function(index, el) {
+					$(el)
+						.removeClass(
+							'box-primary box-success box-warning box-danger  box-violet box-black box-grey'
+						)
+						.addClass(color);
+				});
+			});
+
+			//弹窗
+			var modal = null;
+			$('#dialog-btn').click(function(event) {
+                var _html = '<div >您觉的sui好用吗？</div>';
+				modal = new Modal({
+					id: 'modal1',
+					type: 0,
+					title: '提示',
+					content: _html,
+					complete: function() {},
+					confirm: function() {
+						new Modal({
+							id: 'modal2',
+							title: '提示',
+							content: '感谢您的支持！',
+
+							confirm: function() {
+								this.hide();
+							}
+						});
+					},
+					cancel: function() {
+						new Modal({
+							id: 'modal3',
+							type: '1',
+							content: '取消成功',
+							cancelButton: false,
+							confirm: function() {
+								this.hide();
+							}
+						});
+					}
+				});
+			});
+
+			//滚动文档
+			$(window).on('scroll', function(event) {
+				var scrollTopVal = $(window).scrollTop();
+				if (scrollTopVal > 200) {
+					$backToTop.addClass('in');
+				} else {
+					$backToTop.removeClass('in');
+				}
+			});
+
+			//回到顶部
+			$backToTop.click(function(event) {
+				$('body,html')
+					.stop()
+					.animate(
+						{
+							scrollTop: 0
+						},
+						500,
+						'linear',
+						function() {}
+					);
+			});
+
+			$('body').click(function(event) {
+				$('#tip1').tip('hide');
+			});
+		},
+
+		//表单验证
+		valid: function() {
+			$('#login-form').validate({
+				rules: {
+					user: 'required',
+					password: {
+						required: true,
+						minlength: 6
+					}
+				},
+				messages: {
+					user: '不能为空',
+					password: '密码至少6位数以上'
+				}
+			});
+		},
+
+		// 分页
+		page: function(element) {
+			$(element).page({
+				pageCount: 26,
+				current: 1,
+				showNum: 10,
+				callback: function(tPage) {
+					console.log(tPage);
+				}
+			});
+		}
+	};
+
+	window.sui = sui.init;
+})(this);

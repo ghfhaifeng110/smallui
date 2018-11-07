@@ -2,99 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e2e3f5-c87f-41cb-b5f5-b843c57d6916" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/font/awesome/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/hbook.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/hbook.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/sui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/hbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/sui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/hbook.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/sui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-alert.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-button.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-modal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-nav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-progress.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/module/sui-tip.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/sui-template.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/css/sui.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/sui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/css/font-awesome.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/css/font-awesome.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/dist/font/awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/bgs.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/bgs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/hbook.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/hbook.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/sui.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/icon/login-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/icon/login-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/icon/mima-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/icon/mima-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lib/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/lib/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lib/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/lib/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lib/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lib/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/lib/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/lib/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/lib/prettify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/module/hbook-alert.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/module/hbook-form.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/module/hbook-modal.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/module/hbook-page.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/module/hbook-tip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/js/sui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/css/font-awesome.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bgs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/login-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon/mima-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sui.ico" beforeDir="false" afterPath="$PROJECT_DIR$/dist/images/sui.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sui.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery/.bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery/MIT-LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/lib/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/module/sui-alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/module/sui-form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/module/sui-modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/module/sui-page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/module/sui-tip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/config.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-button.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-table.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/module/sui-tip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sui-template.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sass/sui.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/sui-main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/sui-main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/sui.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/sui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/sui.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/sui.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -143,22 +53,35 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-843787900">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="36" />
+          <entry key="js" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="36" />
+          <entry key="JavaScript" value="11" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="880">
+              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -166,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="288">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -175,17 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/sui-main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="602" column="24" lean-forward="true" selection-start-line="602" selection-start-column="24" selection-end-line="602" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Hbook-gh-pages/Hbook-gh-pages/docs/css/hbook-template.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8019">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="48">
+              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -193,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/css/sui.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="785" column="18" lean-forward="true" selection-start-line="785" selection-start-column="18" selection-end-line="785" selection-end-column="18" />
+            <state relative-caret-position="48">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -204,11 +118,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/sui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="85" column="90" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="90" />
+            <state relative-caret-position="32">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
               <folding>
                 <element signature="e#1336#1412#0" />
                 <element signature="e#1914#2016#0" />
@@ -243,11 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="509">
+              <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -290,9 +204,11 @@
       <list>
         <option value="$PROJECT_DIR$/dist/js/main.js" />
         <option value="$PROJECT_DIR$/example.html" />
-        <option value="$PROJECT_DIR$/dist/css/sui-main.css" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/dist/css/login.css" />
+        <option value="$PROJECT_DIR$/dist/css/sui-main.css" />
+        <option value="$PROJECT_DIR$/dist/css/sui.css" />
+        <option value="$PROJECT_DIR$/dist/js/sui.js" />
       </list>
     </option>
   </component>
@@ -302,18 +218,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="575" />
     <option name="width" value="1346" />
-    <option name="height" value="698" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,33 +235,17 @@
               <item name="smallui" type="b2602c69:ProjectViewProjectNode" />
               <item name="smallui" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="smallui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallui" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallui" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smallui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smallui" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hbook-gh-pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -386,23 +284,19 @@
       <option name="presentableId" value="Default" />
       <updated>1541507975357</updated>
       <workItem from="1541507976823" duration="6865000" />
+      <workItem from="1541552759723" duration="2429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6865000" />
+    <option name="totallyTimeSpent" value="9294000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="575" y="0" width="1346" height="1057" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2007435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23300229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -410,6 +304,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -427,7 +325,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/dist/js/sui.js</url>
           <line>7</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -438,16 +335,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/js/sui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#40#47#1" expanded="true" />
-            <element signature="e#23#30#1" expanded="true" />
-            <element signature="e#40#47#1" expanded="true" />
-            <element signature="e#23#30#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/main.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -459,13 +347,7 @@
     <entry file="file://$PROJECT_DIR$/dist/js/lib/prettify.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/sui-template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1095">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/sui-template.css" />
     <entry file="file://$PROJECT_DIR$/dist/js/lib/message.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -479,23 +361,8 @@
     <entry file="file://$PROJECT_DIR$/dist/images/bgs.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Hbook-gh-pages/Hbook-gh-pages/package/hbook-ui/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Hbook-gh-pages/Hbook-gh-pages/docs/css/hbook-template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8019">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Hbook-gh-pages/Hbook-gh-pages/package/hbook-ui/index.js" />
+    <entry file="file://$PROJECT_DIR$/../Hbook-gh-pages/Hbook-gh-pages/docs/css/hbook-template.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
@@ -505,47 +372,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="880">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/css/sui-main.css">
+    <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="602" column="24" lean-forward="true" selection-start-line="602" selection-start-column="24" selection-end-line="602" selection-end-column="24" />
+        <state relative-caret-position="288">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/sui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="785" column="18" lean-forward="true" selection-start-line="785" selection-start-column="18" selection-end-line="785" selection-end-column="18" />
+        <state relative-caret-position="48">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/sui-main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/login.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/sui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="85" column="90" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="90" />
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding>
             <element signature="e#1336#1412#0" />
             <element signature="e#1914#2016#0" />
@@ -576,6 +435,13 @@
             <element signature="e#15450#15709#0" />
             <element signature="e#15740#15747#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>

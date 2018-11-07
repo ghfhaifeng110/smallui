@@ -20,7 +20,9 @@ time, mark, audio, video {
 
 html {
     line-height: 1; }
-
+body{
+    background-color:#F1F7FC;
+}
 ol, ul {
     list-style: none; }
 
