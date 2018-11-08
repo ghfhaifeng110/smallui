@@ -560,7 +560,7 @@ ol.linenums li {
     border: 1px solid #ddd; }
 
 .docs-example-mt {
-    padding-top: 30px; top:50%;margin-top:200px;}
+    padding-top: 30px; margin-top:20%;min-height:350px;}
 
 .docs-example-scrollbar .progress {
     margin-bottom: 10px; }
@@ -576,7 +576,7 @@ ol.linenums li {
 .box-type a {
     width: 20px;
     height: 20px; }
-
+.flexbox-box{width:346px;min-height:auto;margin-left:320px;padding:0;background:transparent}
 /*====== Scroll ========*/
 .scroll-top {
     display: none;
