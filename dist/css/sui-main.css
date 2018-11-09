@@ -516,10 +516,7 @@ ol.linenums li {
     padding-left: 10px; }
 
 .content {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 0 20px;
-    overflow: hidden; }
+    display:table-cell;width:100%;height:auto;vertical-align:middle }
 
 .quotations {
     padding: 40px 0 0;
@@ -534,7 +531,7 @@ ol.linenums li {
     line-height: 22px; }
 
 .section {
-    margin: 32px 0; }
+    width:646px;margin:auto;height:350px;position:absolute;top:0;bottom:0;right:0;left:0;box-shadow:0 0 8px 0 rgba(0,0,0,.2),0 26px 24px 0 rgba(12,23,44,.1)}
 
 .section > p {
     margin: 10px 0; }
@@ -555,12 +552,10 @@ ol.linenums li {
 .docs-example {
     position: relative;
     padding: 20px;
-    margin: 15px 0;
-    background-color: #fff;
-    border: 1px solid #ddd; }
+    background-color: #fff; }
 
 .docs-example-mt {
-    padding-top: 30px; margin-top:20%;min-height:350px;}
+    min-height:350px;}
 
 .docs-example-scrollbar .progress {
     margin-bottom: 10px; }
@@ -576,7 +571,7 @@ ol.linenums li {
 .box-type a {
     width: 20px;
     height: 20px; }
-.flexbox-box{width:346px;min-height:auto;margin-left:320px;padding:0;background:transparent}
+.flexbox-box{width:270px;min-height:auto;margin-left:320px;padding:0;background:transparent}
 /*====== Scroll ========*/
 .scroll-top {
     display: none;
