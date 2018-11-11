@@ -1,69 +1,229 @@
 <!doctype html>
-<html  lang="en">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="cleartype" content="on">
-	<meta name="description" content="sui,致力于前端开发推广">
-	<meta name="keywords" content="前端,前端开发,前端框架,css,html,js,jquery,ui,设计,sui">
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>简洁、轻量的前端UI框架－sui</title>
-	<link rel="Shortcut Icon" href="dist/images/sui.ico">
-	<link rel="stylesheet" href="docs/css/sui-template.css">
- </head>
- <body >
+    <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="description" content="SUI,致力于前端开发推广">
+    <meta name="keywords" content="前端,前端开发,前端框架,css,html,js,jquery,ui,设计,SUI">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>首页--简洁、轻量的前端UI框架－SUI</title>
+    <link rel="Shortcut Icon" href="dist/images/sui.ico">
+    <link rel="stylesheet" href="dist/font/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/sui.css">
+    <link rel="stylesheet" href="dist/css/sui-main.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<header class="header-wraper clearfix">
+    <h1 class="logo-personal clearfix" ng-if="enterprise_type == 3">
+        <a class="logo-link" href="/home.html">YZO</a>
+    </h1>
+    <nav class="nav-wrap">
+        <ul class="nav-function clearfix">
+            <li class="nav-item active" onclick="click_show_view('dashboard')">
+                <div class="nav-item-title">仪表盘</div>
+            </li>
+            <li class="nav-item" onclick="click_show_view('data_source')">
+                <div class="nav-item-title">工作表</div>
+            </li>
+            <li class="nav-item nav-datasource" onclick="click_show_view('database')">
+                <div class="nav-item-title">数据源</div>
+            </li>
+        </ul>
+    </nav>
+    <div class="hd-set personal-hd-set">
+        <ul class="clearfix">
+            <li class="hd-set-item pl8 pr8 mr8" onclick="navMemUpgradeLog('nav');">
+                <a class="display-inline-block font-w-b cr-bdp text-decoration-hover-underline" href="/member.html" target="_blank" >升级会员</a>
+                <a class="display-inline-block font-w-b cr-bdp text-decoration-hover-underline hide" href="/member-pay.html#?vipLevel=0" target="_blank" >升级/续费</a>
+            </li>
+            <li class="hd-set-item pl8 pr8 pr">
+                <div class="account-info">
+                    <div class="display-inline-block nav-user-logo after-triangle pr" id="J_account_setting_btn" onclick="accountInfoSetting = !accountInfoSetting" title="账号设置">
+                        <img class="user-logo-img" width="22" src="/static/images/user/1-head-pic.png">
+                    </div>
+                    <div class="box-account-tip account-info-content J_user_setting_account hide">
+                        <div class="top-split-line user-info clearfix">
+                            <div class="user-logo" ng-click="modifyPic()">
+                                <img class="user-logo-img" src="/static/images/user/1-head-pic.png">
+                            </div>
+                            <div class="user-content">
+                                <div>
+                                    <span class="user-contact nowrap ng-binding" title="BDP用户" >BDP用户</span>
+                                    <a class="cursor-pointer" href="/member-pay.html#?vipLevel=0" target="_blank" onclick="navMemUpgradeLog('icon');">
+                                    </a>
+                                </div>
+                                <div class="capacity-wrap">
+                                    <div class="capacity-use" style="width: 0%;"></div>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="ng-binding">0  GB</span>
+                                    <span class="font-text-tip ng-binding">/100  MB</span>
+                                    <a class="font-w-b cr-bdp text-decoration-hover-underline fr" href="/member.html" target="_blank" onclick="navMemUpgradeLog('tab_content');">升级会员</a>
+                                    <a class="font-w-b cr-bdp text-decoration-hover-underline fr hide" href="/member-pay.html#?vipLevel=0" target="_blank" onclick="navMemUpgradeLog('tab_content');">升级/续费</a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="operate-list">
+                            <li class="operate-item" onclick="editUserBaseInfo()">
+                                <i class="bdp-icon ico-account-personalinfo operate-img"></i>
+                                <span>个人信息</span>
+                                <i class="bdp-icon ico-triangle-right operater"></i>
+                            </li>
+                            <li class="operate-item">
+                                <i class="bdp-icon ico-coupon operate-img"></i>
+                                <i class="unwatched"></i>
+                                <span>优惠券</span>
+                                <span class="coupon-number ng-binding">1</span>
+                                <i class="bdp-icon ico-triangle-right operater"></i>
+                            </li>
+                            <li class="operate-item" onclick="editPassword()">
+                                <i class="bdp-icon ico-account-password operate-img"></i>
+                                <span>修改密码</span>
+                                <i class="bdp-icon ico-triangle-right operater"></i>
+                            </li>
+                            <li class="operate-item">
+                                <i class="bdp-icon ico-theme operate-img"></i>
+                                <span>主题</span>
+                                <div class="operater">
+                                    <div class="theme-operate-light theme-active" onclick="changeSelectedTheme(theme.id)" title="典雅白">
+                                    </div>
+                                    <div class="theme-operate-dark" onclick="changeSelectedTheme(theme.id)" title="星空蓝">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="operate-item" onclick="showOfflineTask()">
+                                <i class="bdp-icon ico-download-task operate-img"></i>
+                                <i class="unwatched hide"></i>
+                                <span>离线任务</span>
+                                <i class="bdp-icon ico-triangle-right operater"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-account-tip hide">
+                        <div class="generate-coordinate-success">
+                            <div class="generate-coordinate-status-title hide">
+                                <span>下列工作表，新增字段生成成功</span>
+                                <i class="generate-coordinate-status-close cursor-pointer bdp-icon ico-cancel" onclick="closeGeneratedTip()"></i>
+                            </div>
+                            <div class="generate-coordinate-status-title hide">
+                                <span>下列工作表，新增字段生成失败</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-account-tip w240 hide">
+                        <div class="member-tip-wrap">
+                            <div class="member-tip-content clearfix">
+                                <div class="line-height-19 ng-binding">
+                                    您的 会员还有天就到期啦，为确保您能继续享受会员福利，请及时充值续费哦。
+                                </div>
+                                <a class="cr-bdp fr line-height-25" href="/member-pay.html#?vipLevel=0" onclick="memberData.vipShowTip = false" target="_blank">我要续费</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="hd-set-item pl8 pr8">
+                <nav-notice class="ng-isolate-scope">
+                    <div class="pr">
+                        <div onclick="showNoticeList()" title="消息中心">
+                            <span class="bdp-icon-wrap pr">
+                                <i class="bdp-icon ico-alarm-line"></i>
+                                <i class="unwatched active"></i>
+                            </span>
+                        </div>
+                        <div class="nav-unread-wrap J_personal_notice_layer hide" onclick="vm.unreadShow = false;showNoticeList()">
+                            您有新的未读消息
+                        </div>
+                        <div class="nav-notice-list-wrap J_personal_notice_layer hide">
+                            <ul class="bdp-tab-wrap clearfix notice-tab">
+                                <li class="bdp-tab-item notice-tab-item ng-binding bdp-tab-active" onclick="vm.changeNoticeType(tab.typeId)">系统<span class="unread-len ng-binding">22</span>
+                                </li>
+                                <li class="bdp-tab-item notice-tab-item ng-binding" onclick="vm.changeNoticeType(tab.typeId)">预警
+                                </li>
+                                <li class="bdp-tab-item notice-tab-item ng-binding" onclick="vm.changeNoticeType(tab.typeId)">干货
+                                    <span ng-if="tab.unReadNewsLen > 0" class="unread-len ng-binding">10</span>
+                                </li>
+                            </ul>
+                            <div class="notice-list-scroll">
+                                <ul class="notice-list">
+                                    <li class="notice-item-wrap clearfix notice-unread" onclick="vm.openMessagePage(noticeItem, $event)">
+                                        <div class="notice-item" title="">
+                                            <div class="notice-html too-long">
+                                                <div class="ng-binding"><p>五折优惠!! 最后一天!!别忘记小草莓送您的优惠券哦!!最高可减1111,快去行动哟！！！<br></p></div>
+                                            </div>
+                                            <div class="notice-sendtime ng-binding">2018-11-11 10:53:12</div>
+                                        </div>
+                                    </li>
+                                    <li class="notice-item-wrap clearfix notice-unread" onclick="vm.openMessagePage(noticeItem, $event)">
+                                        <div class="notice-item" title="">
+                                            <div class="notice-html too-long">
+                                                <div class="ng-binding"><p>真5折，无套路！！！小草莓提醒您,下单选中优惠券可以直接抵扣哦，快去使用吧！！！<br></p></div>
+                                            </div>
+                                            <div class="notice-sendtime ng-binding">2018-11-10 16:29:31</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="nav-notice-operate clearfix">
+                                <div class="read-all" ng-click="vm.setNoticeReadAll()">
+                                    全部标为已读
+                                </div>
+                                <div class="see-all" ng-click="goToListPage()">
+                                    查看全部
+                                    <i class="bdp-icon ico-triangle-right"></i>
+                                </div>
+                            </div>
+                            <div ng-loading-gif="" ng-show="vm.loading" class="hide"><div class="base-loading-layer"><div class="loader-outer ">
+                                <div class="loader-inner line-scale-pulse-out-rapid"><div>
+                            </div>
+                        </div>
+                    </div>
+                </nav-notice>
+            </li>
+            <li class="hd-set-item pl8 pr8 cursor-pointer" onclick="logout()" title="退出登录">
+                <span class="bdp-icon-wrap">
+                    <i class="bdp-icon ico-logout"></i>
+                </span>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="main clearfix" >
 
-	<div style="display: none;">
-		<img src="dist/images/sui.jpg" alt="简洁、直观的前端UI框架－sui">
-	</div>
+    <div class="sidebar">
+        <!-- nav begin -->
+        <nav class="navbar " id="header">
+            <ul class="nav navbar-nav">
+                <li ><a href="javascript:;" class="active" data-id="h-index"><strong>sui.js</strong> </a></li>
+                <li class="sub"><a href="javascript:;" data-id="h-grid"> 栅格布局</a></li>
+                <li class="sub"><a href="javascript:;" data-id="h-table">表格</a></li>
+                <li class="sub"><a href="javascript:;" data-id="h-page">分页</a></li>
+                <li class="sub"><a href="javascript:;" data-id="h-input">表单</a></li>
+                <li class="sub"><a href="javascript:;" data-id="h-btn">按钮</a></li>
+                <li class="sub"><a href="javascript:;" data-id="h-tip">标签</a></li>
 
-	<!-- template-header begin -->
+            </ul>
+        </nav>
+        <!-- nav end -->
 
-	<div class="template-header"  id="h-index">
-		<h2 class="template-header-tit">sui</h2>
-		<p class="template-header-sum">简洁、轻量的前端UI框架</p>
-		<div class="btn-group">
-			<a href="https://github.com/hwgq2005/sui" class="btn btn-large btn-primary download">sui (v0.2.4)</a>
-			<a href="example.html" class="btn btn-large btn-primary download">开始使用</a>
-		</div>
-	</div>
+    </div>
+    <div class="content" id="content">
+        
+    </div>
+</div>
 
-	<!-- template-header end -->
+<script src="dist/js/lib/jquery/dist/jquery.min.js"></script>
+<script src="dist/js/lib/jquery.validate.min.js"></script>
+<script src="dist/js/lib/prettify.js"></script>
+<script src="dist/js/sui.js"></script>
+<script src="dist/js/main.js"></script>
 
-	<!-- content begin -->
-	<div class="template-content w-768">
-		<p class="template-module-sum">
-		sui专注于前端开发推广，坚持分享、开放的互联网精神；如果你和我有相同的目标，我乐意一起携手前行。
-		</p>
-<pre class="prettyprint linenums">
- &lt;!--  核心 CSS 文件  -->
- &lt;link rel="stylesheet" href="https://unpkg.com/sui-ui/dist/css/sui.min.css">
-
- &lt;!--  核心 JS 文件  -->
- &lt;script src="https://unpkg.com/sui-ui/dist/js/sui.min.js"></script>
-</pre>
-	</div>
-	<!-- content end -->
-
-	<!-- template-footer begin -->
-	<footer class="template-footer w-768">
-		<div class="template-footer-content">
-			<p>© sui 2018-2018 All right reserved By GHF </p>
-			<p>Email：<a href="mailto:sui@163.com" title="邮箱">sui@163.com</a></p>
-		</div>
-	</footer>
-	<!-- template-footer end -->
-
-   <script src="docs/js/lib/prettify.js"></script>
-   <script>
-
-	</script>
-
-
-    <script>
-    	prettyPrint();
-    </script>
- </body>
-
+<script>
+    sui();
+</script>
+</body>
 </html>

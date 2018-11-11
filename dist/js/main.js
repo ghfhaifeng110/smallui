@@ -1,15 +1,17 @@
 /**
- *
- * @authors H君
- * @date    2017-02-09 14:26:44
- * @version 0.0.9
+ * @authors GHFHAIFENG
+ * @date    2018-02-17 21:07:00
+ * @version 0.2.0
  */
+
 !(function(window) {
 	'use strict';
 
 	var $header = $('#header'),
-		$checkBox = $('#check-box'),
-		$loginBtn = $('#login-btn');
+        $checkBox = $('#check-box'),
+        $loginBtn = $('#login_btn'),
+        $navTabs = $('.nav-tabs'),
+        $findPwd = $("#find_pwd");
 
 	var $backToTop = $('#backToTop');
 
@@ -44,12 +46,49 @@
 					);
 			});
 
+			/**
+			 * 登录
+			 */
 			$loginBtn.click(function(event) {
-				if ($('#login-form').valid()) {
-					console.log($('#login-form').serialize());
+				if ($('#login_form').valid()) {
+					console.log($('#login_form').serialize());
 				}
 			});
 
+            /**
+             * Tab 选择
+             */
+            $navTabs.find("li").click(function(event){
+                event.preventDefault();
+                if ($(this).attr("class") == "active") {
+                    return;
+                } else {
+                    $(this).parent().parent().next("div").find("div").removeClass("active");
+	                $(this).parent().find("li").removeClass("active");
+                    $(this).addClass("active");
+                    $($(this).find("a").attr("name")).addClass("active");
+                }
+            });
+
+			/**
+			 * 忘记密码
+			 */
+			$findPwd.click(function(event) {
+                $("#login").slideUp();
+				$("#find_pwd_form").slideDown();
+			});
+
+            /** 
+             * 返回登录
+            */
+            $("#go_login").click(function(){
+                $("#login").slideDown();
+				$("#find_pwd_form").slideUp();
+            });
+
+			/**
+			 * 复选框
+			 */
 			$checkBox.on('click', 'a', function(event) {
 				var $this = $(this),
 					color = $this.data('color');

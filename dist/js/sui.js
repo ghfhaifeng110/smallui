@@ -1,8 +1,7 @@
 /**
  * @authors GHFHAIFENG
  * @date    2018-02-17 21:07:00
- * @version 0.2.0
- * 
+ * @version 0.2.0 
  */
 
 (function (global, factory) {
