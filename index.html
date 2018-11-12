@@ -36,56 +36,57 @@
     <div class="hd-set personal-hd-set">
         <ul class="clearfix">
             <li class="hd-set-item pl8 pr8 mr8" onclick="navMemUpgradeLog('nav');">
-                <a class="display-inline-block font-w-b cr-bdp text-decoration-hover-underline" href="/member.html" target="_blank" >升级会员</a>
-                <a class="display-inline-block font-w-b cr-bdp text-decoration-hover-underline hide" href="/member-pay.html#?vipLevel=0" target="_blank" >升级/续费</a>
+                <a class="display-inline-block font-w-b cr-yto text-decoration-hover-underline" href="/member.html" target="_blank" >升级会员</a>
+                <a class="font-w-b cr-yto text-decoration-hover-underline hide" href="/member-pay.html#?vipLevel=0" target="_blank" >升级/续费</a>
             </li>
             <li class="hd-set-item pl8 pr8 pr">
                 <div class="account-info">
                     <div class="display-inline-block nav-user-logo after-triangle pr" id="J_account_setting_btn" onclick="accountInfoSetting = !accountInfoSetting" title="账号设置">
-                        <img class="user-logo-img" width="22" src="/static/images/user/1-head-pic.png">
+                        <img class="user-logo-img" width="22" src="/dist/images/1-head-pic.png">
+                        <i class="fa fa-sort-desc" aria-hidden="true"></i>
                     </div>
-                    <div class="box-account-tip account-info-content J_user_setting_account hide">
+                    <div class="box-account-tip account-info-content hide">
                         <div class="top-split-line user-info clearfix">
                             <div class="user-logo" ng-click="modifyPic()">
-                                <img class="user-logo-img" src="/static/images/user/1-head-pic.png">
+                                <img class="user-logo-img" src="/dist/images/1-head-pic.png">
                             </div>
                             <div class="user-content">
                                 <div>
-                                    <span class="user-contact nowrap ng-binding" title="BDP用户" >BDP用户</span>
+                                    <span class="user-contact nowrap" title="BDP用户" >BDP用户</span>
                                     <a class="cursor-pointer" href="/member-pay.html#?vipLevel=0" target="_blank" onclick="navMemUpgradeLog('icon');">
                                     </a>
                                 </div>
                                 <div class="capacity-wrap">
                                     <div class="capacity-use" style="width: 0%;"></div>
                                 </div>
-                                <div class="clearfix">
-                                    <span class="ng-binding">0  GB</span>
-                                    <span class="font-text-tip ng-binding">/100  MB</span>
-                                    <a class="font-w-b cr-bdp text-decoration-hover-underline fr" href="/member.html" target="_blank" onclick="navMemUpgradeLog('tab_content');">升级会员</a>
-                                    <a class="font-w-b cr-bdp text-decoration-hover-underline fr hide" href="/member-pay.html#?vipLevel=0" target="_blank" onclick="navMemUpgradeLog('tab_content');">升级/续费</a>
+                                <div class="clearfix w100">
+                                    <span class="">0  GB</span>
+                                    <span class="font-text-tip">/100  MB</span>
+                                    <a class="font-w-b cr-yzo text-decoration-hover-underline pull-right" href="/member.html" target="_blank" onclick="navMemUpgradeLog('tab_content');">升级会员</a>
+                                    <a class="font-w-b cr-yzo text-decoration-hover-underline pull-right hide" href="/member-pay.html#?vipLevel=0" target="_blank" onclick="navMemUpgradeLog('tab_content');">升级/续费</a>
                                 </div>
                             </div>
                         </div>
                         <ul class="operate-list">
                             <li class="operate-item" onclick="editUserBaseInfo()">
-                                <i class="bdp-icon ico-account-personalinfo operate-img"></i>
+                                <i class="fa fa-user-o"></i>
                                 <span>个人信息</span>
-                                <i class="bdp-icon ico-triangle-right operater"></i>
+                                <i class="fa fa-angle-right operater"></i>
                             </li>
                             <li class="operate-item">
-                                <i class="bdp-icon ico-coupon operate-img"></i>
+                                <i class="fa fa-ticket"></i>
                                 <i class="unwatched"></i>
                                 <span>优惠券</span>
                                 <span class="coupon-number ng-binding">1</span>
-                                <i class="bdp-icon ico-triangle-right operater"></i>
+                                <i class="fa fa-angle-right operater"></i>
                             </li>
                             <li class="operate-item" onclick="editPassword()">
-                                <i class="bdp-icon ico-account-password operate-img"></i>
+                                <i class="fa fa-keyboard-o"></i>
                                 <span>修改密码</span>
-                                <i class="bdp-icon ico-triangle-right operater"></i>
+                                <i class="fa fa-angle-right operater"></i>
                             </li>
                             <li class="operate-item">
-                                <i class="bdp-icon ico-theme operate-img"></i>
+                                <i class="fa fa-television"></i>
                                 <span>主题</span>
                                 <div class="operater">
                                     <div class="theme-operate-light theme-active" onclick="changeSelectedTheme(theme.id)" title="典雅白">
@@ -95,98 +96,51 @@
                                 </div>
                             </li>
                             <li class="operate-item" onclick="showOfflineTask()">
-                                <i class="bdp-icon ico-download-task operate-img"></i>
+                                <i class="fa fa-tasks"></i>
                                 <i class="unwatched hide"></i>
                                 <span>离线任务</span>
-                                <i class="bdp-icon ico-triangle-right operater"></i>
+                                <i class="fa fa-angle-right operater"></i>
                             </li>
                         </ul>
-                    </div>
-                    <div class="box-account-tip hide">
-                        <div class="generate-coordinate-success">
-                            <div class="generate-coordinate-status-title hide">
-                                <span>下列工作表，新增字段生成成功</span>
-                                <i class="generate-coordinate-status-close cursor-pointer bdp-icon ico-cancel" onclick="closeGeneratedTip()"></i>
-                            </div>
-                            <div class="generate-coordinate-status-title hide">
-                                <span>下列工作表，新增字段生成失败</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-account-tip w240 hide">
-                        <div class="member-tip-wrap">
-                            <div class="member-tip-content clearfix">
-                                <div class="line-height-19 ng-binding">
-                                    您的 会员还有天就到期啦，为确保您能继续享受会员福利，请及时充值续费哦。
-                                </div>
-                                <a class="cr-bdp fr line-height-25" href="/member-pay.html#?vipLevel=0" onclick="memberData.vipShowTip = false" target="_blank">我要续费</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </li>
             <li class="hd-set-item pl8 pr8">
-                <nav-notice class="ng-isolate-scope">
+
                     <div class="pr">
                         <div onclick="showNoticeList()" title="消息中心">
-                            <span class="bdp-icon-wrap pr">
-                                <i class="bdp-icon ico-alarm-line"></i>
+                            <span class="icon-wrap pr">
+                                <i class="fa fa-bell-o font-16"></i>
                                 <i class="unwatched active"></i>
                             </span>
                         </div>
-                        <div class="nav-unread-wrap J_personal_notice_layer hide" onclick="vm.unreadShow = false;showNoticeList()">
-                            您有新的未读消息
-                        </div>
-                        <div class="nav-notice-list-wrap J_personal_notice_layer hide">
-                            <ul class="bdp-tab-wrap clearfix notice-tab">
-                                <li class="bdp-tab-item notice-tab-item ng-binding bdp-tab-active" onclick="vm.changeNoticeType(tab.typeId)">系统<span class="unread-len ng-binding">22</span>
-                                </li>
-                                <li class="bdp-tab-item notice-tab-item ng-binding" onclick="vm.changeNoticeType(tab.typeId)">预警
-                                </li>
-                                <li class="bdp-tab-item notice-tab-item ng-binding" onclick="vm.changeNoticeType(tab.typeId)">干货
-                                    <span ng-if="tab.unReadNewsLen > 0" class="unread-len ng-binding">10</span>
-                                </li>
-                            </ul>
-                            <div class="notice-list-scroll">
-                                <ul class="notice-list">
-                                    <li class="notice-item-wrap clearfix notice-unread" onclick="vm.openMessagePage(noticeItem, $event)">
-                                        <div class="notice-item" title="">
-                                            <div class="notice-html too-long">
-                                                <div class="ng-binding"><p>五折优惠!! 最后一天!!别忘记小草莓送您的优惠券哦!!最高可减1111,快去行动哟！！！<br></p></div>
-                                            </div>
-                                            <div class="notice-sendtime ng-binding">2018-11-11 10:53:12</div>
-                                        </div>
-                                    </li>
-                                    <li class="notice-item-wrap clearfix notice-unread" onclick="vm.openMessagePage(noticeItem, $event)">
-                                        <div class="notice-item" title="">
-                                            <div class="notice-html too-long">
-                                                <div class="ng-binding"><p>真5折，无套路！！！小草莓提醒您,下单选中优惠券可以直接抵扣哦，快去使用吧！！！<br></p></div>
-                                            </div>
-                                            <div class="notice-sendtime ng-binding">2018-11-10 16:29:31</div>
-                                        </div>
-                                    </li>
+                        <div class="nav-unread-wrap hide" onclick="vm.unreadShow = false;showNoticeList()">您有新的未读消息</div>
+                        <div class="nav-notice-list-wrap ">
+                            <div class="nav-tabs clearfix">
+                                <ul>
+                                    <li class="active"><a href="javascript:;" name="#system" class="font-text-tab-active font-1">系统</a></li>
+                                    <li class=""><a href="javascript:;" name="#alert" class="font-text-tab font-1">预警</a></li>
+                                    <li class=""><a href="javascript:;" name="#message" class="font-text-tab font-1">干货</a></li>
                                 </ul>
                             </div>
-                            
-                            <div class="nav-notice-operate clearfix">
-                                <div class="read-all" ng-click="vm.setNoticeReadAll()">
-                                    全部标为已读
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="system">
+                                    222
                                 </div>
-                                <div class="see-all" ng-click="goToListPage()">
-                                    查看全部
-                                    <i class="bdp-icon ico-triangle-right"></i>
+                                <div class="tab-pane" id="alert">
+                                    333
                                 </div>
-                            </div>
-                            <div ng-loading-gif="" ng-show="vm.loading" class="hide"><div class="base-loading-layer"><div class="loader-outer ">
-                                <div class="loader-inner line-scale-pulse-out-rapid"><div>
+                                <div class="tab-pane" id="message">
+                                    333
+                                </div>
                             </div>
                         </div>
                     </div>
-                </nav-notice>
+
             </li>
             <li class="hd-set-item pl8 pr8 cursor-pointer" onclick="logout()" title="退出登录">
                 <span class="bdp-icon-wrap">
-                    <i class="bdp-icon ico-logout"></i>
+                    <i class="fa fa-sign-out"></i>
                 </span>
             </li>
         </ul>
@@ -212,7 +166,7 @@
 
     </div>
     <div class="content" id="content">
-        
+
     </div>
 </div>
 
