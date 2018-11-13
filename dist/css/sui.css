@@ -1267,6 +1267,7 @@ button[type="button"] {
 
 .tab-content > .tab-pane {
   display: none;
+  height:calc(100% - 40px - 40px);
 }
 
 .tab-content > .active {
