@@ -431,10 +431,22 @@ ol.linenums li {
 .nav-notice-list-wrap .notice-list.warn-type .notice-item-wrap{padding:12px 24px}
 .nav-notice-list-wrap .notice-list.warn-type .notice-item-wrap .notice-item{margin-top:0}
 .nav-notice-list-wrap .notice-list.warn-type .notice-item-wrap .notice-sendtime{margin-top:4px;padding-bottom:0}
-.nav-notice-list-wrap .no-notice{position:absolute;top:55%;left:50%;width:200px;height:230px;margin-top:-115px;margin-left:-100px;text-align:center}.nav-notice-list-wrap .no-notice .no-notice-img{width:192px;height:192px;background-size:cover;background-position:center}
+.nav-notice-list-wrap .no-notice{position:absolute;top:55%;left:50%;width:200px;height:230px;margin-top:-115px;margin-left:-100px;text-align:center}
+.nav-notice-list-wrap .no-notice .no-notice-img{width:192px;height:192px;background-size:cover;background-position:center}
 .nav-notice-list-wrap .nav-notice-operate{height:40px;line-height:20px;padding:10px 16px}
 .nav-notice-list-wrap .nav-notice-operate .see-all{float:right;cursor:pointer;font-weight:700}
 .nav-notice-list-wrap .nav-notice-operate .see-all .bdp-icon{margin-top:-2px}
 .nav-notice-list-wrap .nav-notice-operate .see-all:hover{text-decoration:underline}
 .nav-notice-list-wrap .nav-notice-operate .read-all{float:left;cursor:pointer;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
 .nav-notice-list-wrap .nav-notice-operate .read-all:hover{text-decoration:underline}
+
+/*tab-content*/
+.tab-content .notice-html{color:rgba(10,18,32,.87);height:34px;overflow:hidden;font-weight:700;text-indent:11px;position:relative;font-size:12px;line-height:17px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.tab-content .notice-html::before{background-color:#5182E4;content:'';position:absolute;top:5px;left:0;display:block;width:6px;height:6px;border-radius:100%}
+.tab-content .notice-sendtime{color:rgba(136, 161, 206, 0.46);margin-top:4px;font-size:12px;}
+.tab-content .nav-notice-operate{height:40px;line-height:20px;padding:10px 16px}
+.tab-content .nav-notice-operate .see-all{float:right;cursor:pointer;font-weight:700}
+.tab-content .nav-notice-operate .see-all .bdp-icon{margin-top:-2px}
+.tab-content .nav-notice-operate .see-all:hover{text-decoration:underline}
+.tab-content .nav-notice-operate .read-all{float:left;cursor:pointer;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out}
+.tab-content .nav-notice-operate .read-all:hover{text-decoration:underline}.
